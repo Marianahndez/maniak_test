@@ -1,22 +1,15 @@
 @import 'fonts_colors';
 @import 'bootstrap-grid.css';
 
-.b{
-	border:1px solid #000;
-	padding:10px 20px;
-}
-.left{
-	float: left;
-	position: relative;
-}
 body{
 	font-family: $text_body;
 	font-weight: 300;
+	overflow-x: hidden;
 }
 h1{
-	color:$blue_light;
+	color: $blue_light;
 	font-family: $text_body;
-	font-weight:400;
+	font-weight: 400;
 }
 .banner_1{
 	background: $blue_dark;
@@ -25,4 +18,22 @@ h1{
 .item-slide{
 	position: relative;
 	top: 35%;
+}
+.ti{
+	width: 50%;
+	position: relative;
+	float: letf;
+}
+.left{
+	position: relative;
+	float: left;
+}
+.h30{
+	height: $height-3;
+}
+.not-padd{
+	padding: 0px;
+}
+.img-numbers{
+	width:100%;
 }

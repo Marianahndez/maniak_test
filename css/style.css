@@ -1,16 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Armata|Assistant:300,400|BenchNine|Fira+Sans");
 @import url(bootstrap-grid.css);
-.b {
-  border: 1px solid #000;
-  padding: 10px 20px; }
-
-.left {
-  float: left;
-  position: relative; }
-
 body {
   font-family: "Assistant";
-  font-weight: 300; }
+  font-weight: 300;
+  overflow-x: hidden; }
 
 h1 {
   color: #3399ED;
@@ -24,5 +17,23 @@ h1 {
 .item-slide {
   position: relative;
   top: 35%; }
+
+.ti {
+  width: 50%;
+  position: relative;
+  float: letf; }
+
+.left {
+  position: relative;
+  float: left; }
+
+.h30 {
+  height: 30vh; }
+
+.not-padd {
+  padding: 0px; }
+
+.img-numbers {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
