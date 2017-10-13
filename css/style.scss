@@ -1,0 +1,28 @@
+@import 'fonts_colors';
+@import 'bootstrap-grid.css';
+
+.b{
+	border:1px solid #000;
+	padding:10px 20px;
+}
+.left{
+	float: left;
+	position: relative;
+}
+body{
+	font-family: $text_body;
+	font-weight: 300;
+}
+h1{
+	color:$blue_light;
+	font-family: $text_body;
+	font-weight:400;
+}
+.banner_1{
+	background: $blue_dark;
+	height: 80vh;
+}
+.item-slide{
+	position: relative;
+	top: 35%;
+}

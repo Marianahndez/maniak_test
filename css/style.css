@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Armata|Assistant:300,400|BenchNine|Fira+Sans");
+@import url(bootstrap-grid.css);
+.b {
+  border: 1px solid #000;
+  padding: 10px 20px; }
+
+.left {
+  float: left;
+  position: relative; }
+
+body {
+  font-family: "Assistant";
+  font-weight: 300; }
+
+h1 {
+  color: #3399ED;
+  font-family: "Assistant";
+  font-weight: 400; }
+
+.banner_1 {
+  background: #193144;
+  height: 80vh; }
+
+.item-slide {
+  position: relative;
+  top: 35%; }
+
+/*# sourceMappingURL=style.css.map */
