@@ -2,12 +2,31 @@
 <html>
 <head>
 	<title>Test - Frontend</title>
-	<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js"> 
 	<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body class="row">
 
-	<div class="nav-menu b"><!--Menu at the end--></div>
+	<div class="col-lg-12 menu">
+		 <nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="#">Maniak_test</a>
+			    </div>
+			    <ul class="nav navbar-nav">
+			      <li class="active"><a href="#">Products</a></li>
+			      <li><a href="#">Why Plate IQ</a></li>
+			      <li><a href="#">Customers</a></li>
+			      <li><a href="#">About</a></li>
+			      <li><a href="#">Blog</a></li>
+			    </ul>
+			    <button class="btn button">Request a Demo</button>
+			    <button class="btn login">Login</button>
+			</div>
+		</nav> 
+	</div>
 
 	<div class="container-fluid">
 		<div class="col-lg-12 col-md-12 col-sm-12 banner_1">
@@ -20,21 +39,32 @@
 				<img src="img/enjoy.jpeg" class="ti">
 			</div>
 		</div>
-		<div class="col-lg-12 col-md-12 col-sm-12  b">
-			<p>Here the subscription!</p>
-			<input type="button" name="Request a demo" class="btn">
+		<div class="col-lg-12 col-md-12 col-sm-12 b1_input">
+			<input class="email" type="email" name="" placeholder="Your email address">
+			<button class="btn button">Request a demo</button>
 		</div>
 	</div>
 	
 	<div class="container-fluid">
-		<div class="col-lg-12 b"><p>Carousel logos.</p></div>
+		<div class="container">
+		   <section class="logos_carousel slider">
+		      <div class="slide"><img src="images/image1.png"></div>
+		      <div class="slide"><img src="images/image2.png"></div>
+		      <div class="slide"><img src="images/image3.png"></div>
+		      <div class="slide"><img src="images/image4.png"></div>
+		      <div class="slide"><img src="images/image5.png"></div>
+		      <div class="slide"><img src="images/image6.png"></div>
+		      <div class="slide"><img src="images/image7.png"></div>
+		      <div class="slide"><img src="images/image8.png"></div>
+		   </section>
+		</div>
 	</div>
 
-
-	
 	<div class="container-fluid"> 
 		<div class="col-lg-12 h30">
-			<div class="col-lg-6 col-md-6 col-sm-6 b left">
+			<div class="col-lg-6 col-md-6 col-sm-6 left btxt_1">
+				<h3>Plate IQ is the digital solution that gives you fast, accurate, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h3>
+
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 b left">
@@ -42,59 +72,126 @@
 			</div>
 		</div>
 
-		<div class="col-lg-12 h30">
-			<div class="col-lg-6 col-md-6 col-sm-6 b left">
+		<div class="col-lg-12 h30 left">
+			<div class="col-lg-6 col-md-6 col-sm-6 left">
 				<img src="img/enjoy.jpeg" class="ti">
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 b left">
+			<div class="col-lg-6 col-md-6 col-sm-6 left btxt_1">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 			</div>
 		</div>
 	</div>
 
-	<div class="col-lg-12">
+	<div class="col-lg-12 images-qty">
 		<div class="col-lg-4 col-md-4 col-sm-4 not-padd left">
+			<h2>800M <span>$</span> <br><span>worth of invoices processed</span></h2>
 			<img src="img/enjoy.jpeg" class="img-numbers">
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-4 not-padd left">
+			<h2>700,000 <span>sku</span> <br> <span>daily prices traked</span></h2>
 			<img src="img/enjoy.jpeg" class="img-numbers">
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-4 not-padd left">
+			<h2>150,000 <span>h</span> <br> <span>saved hours for our clients</span></h2>
 			<img src="img/enjoy.jpeg" class="img-numbers">
 		</div>
 	</div>
 
-	<div class="col-lg-12">
-		<div class="col-lg-6 b left">
-			<p>Client carousel</p>
+	<div class="container-fluid">
+		<div class="col-lg-12 clients_section">
+			<div class="container-fluid">
+				<h3>See what our clients are saying</h3>
+			   <section class="clients_carousel slider">
+			      <div class="slide col-lg-12">
+			      	<div class="col-lg-6 left"> 
+			      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+			      	</div>
+			      	<div class="col-lg-6 left">
+			      		<h2>Charles Bililies <br><span>Founder & CEO, Souvla</span></h2>
+			      	</div>
+			      </div>
+
+			      <div class="slide col-lg-12">
+			      	<div class="col-lg-6 left"> 
+			      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+			      	</div>
+			      	<div class="col-lg-6 left">
+			      		<h2>Charles Bililies <br><span>Founder & CEO, Souvla</span></h2>
+			      	</div>
+			      </div>
+
+			      <div class="slide col-lg-12">
+			      	<div class="col-lg-6 left"> 
+			      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+			      	</div>
+			      	<div class="col-lg-6 left">
+			      		<h2>Charles Bililies <br><span>Founder & CEO, Souvla</span></h2>
+			      	</div>
+			      </div>
+			   </section>
+			</div>
 		</div>
-		<div class="col-lg-6 b left">
-			<p>Client carousel</p>
-		</div> 
 	</div>
 
-	<div class="col-lg-12">
-		<div class="col-lg-6 col-md-6 col-sm-6 b left">
-			<p>Some text</p>
+	<div class="col-lg-12 banner_2">
+		<div class="col-lg-6 col-md-6 col-sm-6 b left b2_txt">
+			<p>Ready to get started with <br> Plate IQ?</p>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 b left">
-			<p>Subscription here!</p>
+		<div class="col-lg-6 col-md-6 col-sm-6 b left b2_input">
+			<p>No more manual data entry. Hands off. Thumbs up.</p>
+			
+			<div>
+				<input class="email" type="email" name="" placeholder="Your email address">
+				<button class="btn button">Request a demo</button>
+			</div>
 		</div>
 	</div>
 
-	<div class="col-lg-12">
+	<div class="col-lg-12 footer">
 		<div class="col-lg-3 col-md-3 col-sm-3 b left">
 			<p>Fotter stuff</p>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-3 b left">
-			<p>Fotter stuff</p>
+			<p>Plate IQ</p>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-3 b left">
-			<p>Fotter stuff</p>
+			<p>Social</p>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-3 b left">
-			<p>Fotter stuff</p>
+			<p>Suport</p>
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.logos_carousel').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+    $('.clients_carousel').slick({
+    	slidesToShow: 1,
+    	autoplay: false,
+    	slidesToScroll: 1,
+    	dots: true,
+    	dotsClass: 'dots_slide',
+    	arrows:false
+    });
+});
+</script>
 </html>

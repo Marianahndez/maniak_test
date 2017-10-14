@@ -1,22 +1,67 @@
-@import url("https://fonts.googleapis.com/css?family=Armata|Assistant:300,400|BenchNine|Fira+Sans");
+@import url("https://fonts.googleapis.com/css?family=Armata|Assistant:300,400|BenchNine|Fira+Sans+Condensed:300,500");
+@import url(bootstrap.css);
 @import url(bootstrap-grid.css);
+@import url(bootstrap.min.css);
+@import url(bootstrap-rebot.min.css);
+@import url(infinite-slider.css);
 body {
   font-family: "Assistant";
   font-weight: 300;
   overflow-x: hidden; }
 
 h1 {
-  color: #3399ED;
+  color: #fff;
   font-family: "Assistant";
   font-weight: 400; }
+
+.menu {
+  background: #193144; }
+
+.nav li {
+  display: inline-block;
+  margin: 0px 20px; }
+
+.navbar-nav {
+  display: inline-block;
+  margin-left: 30%; }
 
 .banner_1 {
   background: #193144;
   height: 80vh; }
 
+.b1_input {
+  bottom: 35%;
+  text-align: center; }
+  .b1_input input.email {
+    background: #0e1f2c;
+    border: 1px solid transparent;
+    width: 25%;
+    height: 30px;
+    padding: 5px;
+    color: #fff; }
+  .b1_input button.btn {
+    color: #fff;
+    padding: 8px 10px;
+    position: relative;
+    right: 4px;
+    border: 0px;
+    background: #3399ED; }
+
+.btxt_1 {
+  padding: 10px 20px;
+  margin-top: 20px; }
+  .btxt_1 h3 {
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding: 0px 100px 0 0; }
+  .btxt_1 p {
+    padding: 0 100px 0 0; }
+
 .item-slide {
   position: relative;
-  top: 35%; }
+  top: 25%; }
+  .item-slide h1 {
+    padding: 0px 70px; }
 
 .ti {
   width: 50%;
@@ -35,5 +80,66 @@ h1 {
 
 .img-numbers {
   width: 100%; }
+
+.banner_2 {
+  padding: 50px 5px;
+  background: #3399ED; }
+  .banner_2 .b2_txt p {
+    font-family: "Fira Sans Condensed";
+    font-size: 27px; }
+  .banner_2 .b2_txt {
+    color: #fff;
+    padding: 20px 30px; }
+  .banner_2 .b2_input {
+    color: #fff; }
+    .banner_2 .b2_input input.email {
+      background: #1F69A7;
+      border: 1px solid transparent;
+      width: 40%;
+      height: 30px;
+      padding: 5px;
+      color: #fff; }
+    .banner_2 .b2_input button.btn {
+      color: #fff;
+      padding: 8px 10px;
+      position: relative;
+      right: 4px;
+      border: 1px solid #3399ED;
+      background: #1F69A7; }
+
+.images-qty h2 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: #fff; }
+
+.clients_section {
+  padding: 30px 0px; }
+  .clients_section h2 {
+    font-family: "Fira Sans Condensed";
+    font-weight: 500; }
+    .clients_section h2 span {
+      font-weight: 300;
+      font-family: "Fira Sans Condensed"; }
+
+.clients_carousel p {
+  padding: 10px 20px; }
+.clients_carousel h2 {
+  float: right;
+  margin-right: 50px; }
+
+.dots_slide #slick-slide10, .dots_slide #slick-slide11, .dots_slide #slick-slide12 {
+  margin-left: 20px;
+  cursor: pointer; }
+.dots_slide li {
+  float: left;
+  position: relative;
+  left: 50%; }
+.dots_slide li button {
+  display: none; }
+
+.footer {
+  background: #193144;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

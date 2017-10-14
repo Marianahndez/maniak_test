@@ -1,5 +1,9 @@
 @import 'fonts_colors';
+@import 'bootstrap.css';
 @import 'bootstrap-grid.css';
+@import 'bootstrap.min.css';
+@import 'bootstrap-rebot.min.css';
+@import 'infinite-slider.css';
 
 body{
 	font-family: $text_body;
@@ -7,17 +11,65 @@ body{
 	overflow-x: hidden;
 }
 h1{
-	color: $blue_light;
+	color: $white;
 	font-family: $text_body;
 	font-weight: 400;
+}
+.menu{
+	background: $blue_dark;
+}
+.nav{
+	li{
+		display: inline-block;
+		margin: 0px 20px;
+	}
+}
+.navbar-nav{
+	display: inline-block;
+	margin-left: 30%;
 }
 .banner_1{
 	background: $blue_dark;
 	height: 80vh;
 }
+.b1_input{
+	bottom: 35%;
+	text-align: center;
+	input.email{
+		background: #0e1f2c;
+		border: 1px solid transparent;
+		width: 25%;
+		height: 30px;
+		padding: 5px;
+		color:$white;
+	}
+	button.btn{
+		color:$white;
+		padding: 8px 10px;
+		position: relative;
+		right:4px;
+		border: 0px;
+		background: $blue_light;
+	}
+}
+.btxt_1{
+	padding: 10px 20px;
+	margin-top: 20px;
+	h3{
+		font-weight:bold;
+		margin-bottom: 50px;
+		padding: 0px 100px 0 0;
+	}
+	p{
+		padding: 0 100px 0 0;
+	}
+}
 .item-slide{
 	position: relative;
-	top: 35%;
+	top: 25%;
+	h1{
+		padding:0px 70px;
+	}
 }
 .ti{
 	width: 50%;
@@ -36,4 +88,81 @@ h1{
 }
 .img-numbers{
 	width:100%;
+}
+.banner_2{
+	padding:50px 5px;
+	background: $blue_light;
+	.b2_txt p{
+		font-family: $titles;
+		font-size:27px;
+		}
+	.b2_txt{
+		color:$white;
+		padding:20px 30px;
+	}
+	.b2_input{
+		color:$white;
+		input.email{
+			background: #1F69A7;
+			border: 1px solid transparent;
+			width: 40%;
+			height: 30px;
+			padding: 5px;
+			color:$white;
+		}
+		button.btn{
+			color:$white;
+			padding: 8px 10px;
+			position: relative;
+			right:4px;
+			border: 1px solid $blue_light;
+			background: #1F69A7;
+		}
+	}
+}
+.images-qty{
+	h2{
+		position: absolute;
+		top: 40%;
+		left: 40%;
+		color: #fff;
+	}
+}
+.clients_section{
+	padding: 30px 0px;
+	h2{
+		font-family: $titles;
+		font-weight: 500;
+		span{
+			font-weight: 300;
+			font-family: $titles;
+		}
+	}
+}
+.clients_carousel{
+	p{
+		padding:10px 20px;
+	}
+	h2{
+		float: right;
+		margin-right: 50px;
+	}
+}
+.dots_slide{
+	#slick-slide10, #slick-slide11, #slick-slide12{
+		margin-left: 20px;
+		cursor: pointer;
+	}
+	li{
+		float: left;
+		position: relative;
+		left: 50%;
+	}
+	li button{
+		display: none;
+	}
+}
+.footer{
+	background: $blue_dark;
+	color: $white;
 }
