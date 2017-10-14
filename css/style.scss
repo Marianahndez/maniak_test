@@ -9,28 +9,71 @@ body{
 	font-family: $text_body;
 	font-weight: 300;
 	overflow-x: hidden;
+	.button{
+		background: $blue_light;
+		transition: background 0.5s ease;
+	}
+	.button:hover{
+		background: $blue_hover;
+	}
 }
 h1{
 	color: $white;
 	font-family: $text_body;
-	font-weight: 400;
+	font-weight: bold;
+}
+h4{
+	font-weight: 300;
+}
+a:hover{
+	color: $blue_light;
+	text-decoration: none;
+	cursor: pointer;
+}
+button{
+	cursor: pointer;
 }
 .menu{
 	background: $blue_dark;
 }
 .nav{
+	a{
+		color: $menu_links;
+		transition: color 0.5s ease;
+	}
+	a:hover{
+		color: $white;
+	}
 	li{
 		display: inline-block;
-		margin: 0px 20px;
+		margin: 0px 13px;
+	}
+}
+.navbar{
+	.button{
+		background: $blue_light;
+		color: $white;
+	}
+	.login{
+		background: transparent;
+		border: 0.5px solid $white;
+		color: $white;
+		transition: background 0.5s ease;
+	}
+	.login:hover{
+		background: $white_hover;
 	}
 }
 .navbar-nav{
 	display: inline-block;
-	margin-left: 30%;
+	margin-left: 20%;
 }
 .banner_1{
 	background: $blue_dark;
 	height: 80vh;
+	h1 span{
+		font-weight: 100; 
+	}
 }
 .b1_input{
 	bottom: 35%;
@@ -39,8 +82,8 @@ h1{
 		background: #0e1f2c;
 		border: 1px solid transparent;
 		width: 25%;
-		height: 30px;
-		padding: 5px;
+		height: 35px;
+		padding: 5px 10px;
 		color:$white;
 	}
 	button.btn{
@@ -50,7 +93,12 @@ h1{
 		right:4px;
 		border: 0px;
 		background: $blue_light;
+		border-radius: 0px;
+		bottom: 2px;
 	}
+}
+#logos_carousel{
+	margin-bottom: 60px;
 }
 .btxt_1{
 	padding: 10px 20px;
@@ -63,25 +111,48 @@ h1{
 	p{
 		padding: 0 100px 0 0;
 	}
+	i{
+		margin-left: 5px;
+	}
+}
+.btxt_2{
+	padding: 50px 90px;
+	i{
+		margin-left: 5px;
+	}
 }
 .item-slide{
 	position: relative;
 	top: 25%;
 	h1{
-		padding:0px 70px;
+		padding:0px 80px;
 	}
 }
 .ti{
-	width: 50%;
+	width: 50% !important;
+	position: relative;
+}
+.bimg_1{
+	width: 100%;
 	position: relative;
 	float: letf;
+}
+.logo{
+	width: 20%;
 }
 .left{
 	position: relative;
 	float: left;
 }
-.h30{
-	height: $height-3;
+#products{
+	margin-bottom: 50px;
+}
+.h50{
+	height: $height/2;
+	margin-bottom: 20px;
+}
+.h70{
+	height: ($height)-30vh;
 }
 .not-padd{
 	padding: 0px;
@@ -94,20 +165,26 @@ h1{
 	background: $blue_light;
 	.b2_txt p{
 		font-family: $titles;
-		font-size:27px;
+		font-size:35px;
 		}
 	.b2_txt{
 		color:$white;
-		padding:20px 30px;
+		padding:20px 45px;
 	}
 	.b2_input{
 		color:$white;
+		padding: 25px 20px;
+		p{
+			font-family: $text_body;	
+			font-size:25px;
+			font-weight: 300;
+		}
 		input.email{
 			background: #1F69A7;
 			border: 1px solid transparent;
 			width: 40%;
-			height: 30px;
-			padding: 5px;
+			height: 36px;
+			padding: 5px 10px;
 			color:$white;
 		}
 		button.btn{
@@ -117,19 +194,44 @@ h1{
 			right:4px;
 			border: 1px solid $blue_light;
 			background: #1F69A7;
+			bottom: 2px;
+			border-radius: 0px;
 		}
 	}
 }
 .images-qty{
 	h2{
+		font-family: $numbers;
+		span{
+			font-family: $text_body;
+			font-weight: 300; 
+			font-size: 25px;
+		}
+	}
+	.img1 h2{
 		position: absolute;
-		top: 40%;
-		left: 40%;
+		top: 30%;
+		left: 17%;
 		color: #fff;
+		text-align: center;
+	}
+	.img2 h2{
+		position: absolute;
+		top: 30%;
+		left: 30%;
+		color: #fff;
+		text-align: center;
+	}
+	.img3 h2{
+		position: absolute;
+		top: 30%;
+		left: 20%;
+		color: #fff;
+		text-align: center;
 	}
 }
 .clients_section{
-	padding: 30px 0px;
+	padding: 70px 20px;
 	h2{
 		font-family: $titles;
 		font-weight: 500;
@@ -137,6 +239,9 @@ h1{
 			font-weight: 300;
 			font-family: $titles;
 		}
+	}
+	h3{
+		margin-bottom:50px;
 	}
 }
 .clients_carousel{
@@ -165,4 +270,18 @@ h1{
 .footer{
 	background: $blue_dark;
 	color: $white;
+	padding: 20px 30px;
+	ul{
+		padding: 0px;
+	}
+	li{
+		list-style: none;
+	}
+	a{
+		color: $white;
+		transition: color 0.5s ease;
+	}
+	a:hover{
+		color: $gray;
+	}
 }
